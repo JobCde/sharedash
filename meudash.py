@@ -32,7 +32,7 @@ if senha == senha_correta:
     associacoes = pd.DataFrame.from_dict(mapeamento_respostas, orient='index')
     associacoes['codigo'] = associacoes.index
     st.sidebar.title("Filtros")
-    Filtro por Área de Atuação
+   
     area_selecionada = st.sidebar.selectbox("Selecione a Área de Atuação:", associacoes['área'].unique())
     funcoes_disponiveis = associacoes[associacoes['área'] == area_selecionada]['função'].unique()
     funcao_selecionada = st.sidebar.selectbox("Selecione a Função Atual:", funcoes_disponiveis)
