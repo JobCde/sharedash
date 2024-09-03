@@ -5,6 +5,17 @@ import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 import plotly.express as px
 
+hide_github_icon = """
+<style>
+.viewerBadge_container__1QSob { 
+    display: none; 
+}
+</style>
+"""
+
+st.markdown(hide_github_icon, unsafe_allow_html=True)
+
+
 senha_correta = st.secrets["senha_correta"]
 senha = st.text_input("Digite a senha para acessar o dashboard:", type="password")
 if senha == senha_correta:
