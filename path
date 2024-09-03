@@ -1,0 +1,9 @@
+import streamlit as st
+import pandas as pd
+
+# Carregar o arquivo diretamente pelo Streamlit
+uploaded_file = st.file_uploader("C:\\teste_python\\PROJETO_EY_VALE\\SERRA_NORTE_DADOS.xlsx", type="xlsx")
+
+if uploaded_file is not None:
+    df = pd.read_excel(uploaded_file)
+    # Continue com o processamento do df...
