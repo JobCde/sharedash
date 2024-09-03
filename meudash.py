@@ -6,7 +6,7 @@ from wordcloud import WordCloud
 import plotly.express as px
 
 # Carregar os dados
-file_path = 'C:\\teste_python\\PROJETO_EY_VALE\\SERRA_NORTE_DADOS.xlsx'
+file_path = 'SERRA_NORTE_DADOS.xlsx'
 df = pd.read_excel(file_path)
 #%%
 mapeamento_respostas = {
