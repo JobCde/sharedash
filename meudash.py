@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 import plotly.express as px
 
-senha_correta = "123456"
+senha_correta = st.secrets["senha_correta"]
 senha = st.text_input("Digite a senha para acessar o dashboard:", type="password")
 if senha == senha_correta:
     st.success("Senha correta! Acesso permitido.")
