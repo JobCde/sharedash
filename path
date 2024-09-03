@@ -1,9 +1,1 @@
-import streamlit as st
-import pandas as pd
 
-# Carregar o arquivo diretamente pelo Streamlit
-uploaded_file = st.file_uploader("Escolha o arquivo Excel", type="xlsx")
-
-if uploaded_file is not None:
-    df = pd.read_excel(uploaded_file)
-    # Continue com o processamento do df...
